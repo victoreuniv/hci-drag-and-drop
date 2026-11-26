@@ -1,23 +1,20 @@
-# Puzzle Drag & Drop · HCI
+# Puzzle informático Drag & Drop · HCI
 
-Recurso educativo interactivo para una asignatura universitaria de **Interacción Humano-Computadora**.
+Actividad interactiva de reconstrucción visual para una asignatura universitaria de Interacción Humano-Computadora.
 
-## Qué demuestra
+## Características
 
-- Arrastre con `HTML Drag and Drop API` y alternativa táctil/teclado.
-- Cronómetro visible.
-- Retroalimentación inmediata de aciertos y errores.
-- Indicador de progreso y dialogo de finalización.
-- Explicación integrada de principios de HCI.
+- Imagen informática dividida en 9 piezas.
+- Arrastre con HTML Drag and Drop API.
+- Alternativa accesible mediante selección y clic.
+- Cronómetro, progreso y retroalimentación inmediata.
+- Reinicio aleatorio y dialogo de finalización.
+- Principios HCI explicados dentro de la experiencia.
 
-## Ejecutar localmente
+## Vista local
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Después, visita `http://localhost:8000`.
-
-## Publicación
-
-El sitio está diseñado para GitHub Pages desde la rama `main` y la carpeta raíz.
+Abre `http://localhost:8000`.
