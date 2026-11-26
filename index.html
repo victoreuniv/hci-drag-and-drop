@@ -8,51 +8,17 @@
 </head>
 <body>
   <main class="app-shell">
-    <header>
-      <div>
-        <p class="eyebrow">HCI · Laboratorio interactivo</p>
-        <h1>Puzzle informático <span aria-hidden="true">🖥️</span></h1>
-      </div>
-      <div class="timer"><span>Tiempo</span><strong id="timer">00:00</strong></div>
-    </header>
-
+    <header><div><p class="eyebrow">HCI · Laboratorio interactivo</p><h1>Puzzle informático <span aria-hidden="true">🖥️</span></h1></div><div class="timer"><span>Tiempo</span><strong id="timer">00:00</strong></div></header>
     <section class="challenge">
       <p class="instructions">Reconstruye la imagen informática arrastrando cada pieza a su posición.</p>
-      <div class="status-row">
-        <span id="progressText" role="status">0 de 9 colocadas</span>
-        <button id="resetButton" type="button">Reiniciar</button>
-      </div>
+      <div class="status-row"><span id="progressText" role="status">0 de 9 colocadas</span><button id="resetButton" type="button">Reiniciar</button></div>
       <div class="progress"><span id="progressBar"></span></div>
-
-      <div class="game">
-        <div class="board" id="board" aria-label="Piezas disponibles"></div>
-        <div class="puzzle" id="puzzle" aria-label="Tablero del puzzle"></div>
-      </div>
-
-      <div id="feedback" class="feedback" role="status" aria-live="polite">
-        <span aria-hidden="true">💡</span>
-        <p><strong>Instrucción:</strong> arrastra una porción de la imagen al espacio coincidente.</p>
-      </div>
+      <div class="game"><div class="board" id="board" aria-label="Piezas disponibles"></div><div class="puzzle" id="puzzle" aria-label="Tablero del puzzle"></div></div>
+      <div id="feedback" class="feedback" role="status" aria-live="polite"><span aria-hidden="true">💡</span><p><strong>Instrucción:</strong> arrastra una porción de la imagen al espacio coincidente.</p></div>
     </section>
-
-    <details>
-      <summary>Principios de HCI observados</summary>
-      <ul>
-        <li><strong>Correspondencia espacial:</strong> la ubicación conserva el contexto visual.</li>
-        <li><strong>Retroalimentación inmediata:</strong> aciertos y errores se muestran al instante.</li>
-        <li><strong>Redundancia:</strong> arrastre y selección por clic ofrecen métodos equivalentes.</li>
-        <li><strong>Estado visible:</strong> progreso y tiempo ayudan a evaluar la tarea.</li>
-      </ul>
-    </details>
+    <details><summary>Principios de HCI observados</summary><ul><li><strong>Correspondencia espacial:</strong> la ubicación conserva el contexto visual.</li><li><strong>Retroalimentación inmediata:</strong> aciertos y errores se muestran al instante.</li><li><strong>Redundancia:</strong> arrastre y selección por clic ofrecen métodos equivalentes.</li><li><strong>Estado visible:</strong> progreso y tiempo ayudan a evaluar la tarea.</li></ul></details>
   </main>
-
-  <dialog id="successDialog">
-    <div class="success-icon" aria-hidden="true">✓</div>
-    <h2>¡Imagen reconstruida!</h2>
-    <p>Tiempo: <strong id="finalTime">00:00</strong></p>
-    <button id="playAgainButton" type="button">Jugar de nuevo</button>
-  </dialog>
-
+  <dialog id="successDialog"><div class="success-icon" aria-hidden="true">✓</div><h2>¡Imagen reconstruida!</h2><p>Tiempo: <strong id="finalTime">00:00</strong></p><button id="playAgainButton" type="button">Jugar de nuevo</button></dialog>
   <script src="script.js"></script>
 </body>
 </html>

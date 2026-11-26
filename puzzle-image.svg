@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#101b3f"/><stop offset="1" stop-color="#5367ed"/>
+    </linearGradient>
+    <linearGradient id="screen" x2="0" y2="1">
+      <stop stop-color="#202d55"/><stop offset="1" stop-color="#10172e"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="900" fill="url(#bg)"/>
+  <circle cx="780" cy="110" r="180" fill="#7c88ff" opacity=".18"/>
+  <circle cx="100" cy="830" r="220" fill="#20d4a7" opacity=".12"/>
+  <g transform="translate(90 105)">
+    <rect x="45" y="55" width="630" height="420" rx="28" fill="#090f22" stroke="#b9c3ff" stroke-width="18"/>
+    <rect x="70" y="80" width="580" height="345" rx="12" fill="url(#screen)"/>
+    <rect x="310" y="475" width="100" height="75" fill="#cbd3ec"/>
+    <path d="M210 555H510L555 590H165Z" fill="#eef2ff"/>
+    <circle cx="360" cy="250" r="105" fill="#5367ed" opacity=".28"/>
+    <circle cx="360" cy="250" r="70" fill="#8fa0ff" opacity=".18"/>
+    <path d="M210 350l82-82 62 52 55-70 115 100H210z" fill="#20d4a7"/>
+    <g transform="translate(110 115)">
+      <path d="M0 0h85v20H0zM0 35h150v20H0zM0 70h105v20H0z" fill="#eaf0ff" opacity=".9"/>
+      <path d="M0 130h120v80H0z" fill="#5367ed" opacity=".75"/>
+      <path d="M35 150h50M35 165h50M35 180h50" stroke="#fff" stroke-width="7"/>
+    </g>
+    <g transform="translate(525 135)">
+      <rect width="95" height="95" rx="18" fill="#ffbd59"/>
+      <path d="M25 55l16 16 32-38" fill="none" stroke="#182033" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <text x="450" y="790" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="62" font-weight="800">HCI</text>
+  <text x="450" y="842" text-anchor="middle" fill="#bfc8ff" font-family="Arial,sans-serif" font-size="30" font-weight="700">Human · Computer · Interaction</text>
+</svg>
