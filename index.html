@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#5367ed">
+  <title>Puzzle Drag & Drop · HCI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">HCI · Laboratorio interactivo</p>
+        <h1>Puzzle Drag &amp; Drop <span aria-hidden="true">🧩</span></h1>
+      </div>
+      <div class="timer-wrap" aria-live="off">
+        <span>Tiempo</span>
+        <strong id="timer">00:00</strong>
+      </div>
+    </header>
+
+    <section class="challenge" aria-labelledby="instructions">
+      <p id="instructions" class="instructions">Arrastra cada pieza a su posición correcta.</p>
+
+      <div class="status-row">
+        <div id="progressText" role="status">0 de 3 colocadas</div>
+        <button id="resetButton" type="button">Reiniciar</button>
+      </div>
+
+      <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+      <div class="game" aria-label="Juego de ordenación por arrastre">
+        <div class="pieces" id="pieces" aria-label="Piezas disponibles">
+          <button class="piece" draggable="true" data-piece="1" aria-label="Pieza 1">1</button>
+          <button class="piece" draggable="true" data-piece="2" aria-label="Pieza 2">2</button>
+          <button class="piece" draggable="true" data-piece="3" aria-label="Pieza 3">3</button>
+        </div>
+
+        <div class="targets" id="targets" aria-label="Posiciones del puzzle">
+          <button class="target" data-target="1" aria-label="Posición 1"><span>1</span></button>
+          <button class="target" data-target="2" aria-label="Posición 2"><span>2</span></button>
+          <button class="target" data-target="3" aria-label="Posición 3"><span>3</span></button>
+        </div>
+      </div>
+
+      <section id="feedback" class="feedback" role="status" aria-live="polite" aria-label="Resultado">
+        <span class="feedback-icon" aria-hidden="true">💡</span>
+        <p><strong>Comprueba tu interacción:</strong> selecciona una pieza y arrástrala hasta su número equivalente.</p>
+      </section>
+    </section>
+
+    <details class="learning">
+      <summary>Principios de HCI observados</summary>
+      <ul>
+        <li><strong>Retroalimentación:</strong> la interfaz confirma cada acierto o error.</li>
+        <li><strong>Consistencia:</strong> el número identifica visualmente la pieza y su destino.</li>
+        <li><strong>Accesibilidad:</strong> también puedes seleccionar una pieza y después su posición.</li>
+        <li><strong>Visibilidad del estado:</strong> el progreso y el tiempo mantienen informado al usuario.</li>
+      </ul>
+    </details>
+  </main>
+
+  <dialog id="successDialog">
+    <div class="success-icon" aria-hidden="true">✓</div>
+    <h2>¡Puzzle completado!</h2>
+    <p>Tiempo: <strong id="finalTime">00:00</strong></p>
+    <button id="playAgainButton" type="button">Jugar de nuevo</button>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
